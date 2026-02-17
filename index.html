@@ -38,6 +38,9 @@
             </div>
             <button v-on:click="cart += 1">Add to cart</button>
         </div>
+        <button v-on:click="removeFromCart" :disabled="cart <= 0">
+            Remove from cart
+        </button>
     </div>
 </div>
 
